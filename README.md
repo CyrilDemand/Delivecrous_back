@@ -1,13 +1,13 @@
-# Projet Rentrée - Back
+# Delivecrous back
 
-Vous êtes ici sur le repository de la partie back de notre application.
-Il s'agit d'une API Rest basé sur Spring Boot et h2.
+You are currently on the repository for the backend part of our application.
+It is a REST API based on Spring Boot and H2.
 
-Cyril est le plus beau bg de la planète
+Cyril is the most handsome person on the planet.
 
-## Installation classique
+## Standard Installation
 
-Prerequis : Avoir installé Java 17 et Maven
+Prerequisites: Must have Java 17 and Maven installed
 
 ```console
 git clone https://github.com/theoernould/projet-rentree-back
@@ -16,9 +16,9 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-## Installation avec Docker
+## Installation with Docker
 
-Prerequis : Avoir installé Docker sur sa machine
+Prerequisites: Must have Docker installed on your machine
 
 ```console
 docker build . -t project-rentree-back
@@ -27,28 +27,28 @@ docker run -p 8080:8080 -d project-rentree-back
 
 ## Sources
 
-Le dossier src contient les sources du projet.
-Les packages sont :
-- **annotation** : contient des annotations personnalisées utilisées notament pour l'authentification
-- **controller** : contient les controllers de l'API.
-- **config** : contient les classes de configuration de l'API.
-- **dto** : contient les objets de transfert de données, triés par entité.
-- **exception** : contient des exceptions custom avec des message personnalisées renvoyées par l'API en cas d'erreur côté serveur.
-- **filter** : contient les filtres utilisés pour l'authentification, la gestion des CORS et la gestion des erreurs.
-- **models** : contient les entités de la base de données.
-- **models/enums** : contient les enums utilisés dans les entités.
-- **repository** : contient les repositories utilisés pour les entités.
-- **services** : contient les services utilisés par les controllers pour gerer les entités.
+The src folder contains the project's sources.
+The packages are:
+- **annotation**: contains custom annotations used notably for authentication
+- **controller**: contains the API's controllers.
+- **config**: contains the API's configuration classes.
+- **dto**: contains the data transfer objects, sorted by entity.
+- **exception**: contains custom exceptions with personalized messages returned by the API in case of server-side errors.
+- **filter**: contains filters used for authentication, CORS management, and error handling.
+- **models**: contains the database entities.
+- **models/enums**: contains enums used in entities.
+- **repository**: contains repositories used for entities.
+- **services**: contains services used by controllers to manage entities.
 
 ## Postman
 
-Dans le dossier "resources" se trouve un fichier "Projet Rentrée.postman_collection.json" qui contient une collection Postman avec toutes requêtes utiles pour utiliser l'API.
-Pour importer la collection, il suffit de cliquer sur "Import" dans Postman et de sélectionner le fichier json.
+In the "resources" folder, there is a file named "Projet Rentrée.postman_collection.json" that contains a Postman collection with all the necessary requests to use the API.
+To import the collection, simply click on "Import" in Postman and select the json file.
 
 ![image](resources/postman_import.png)
 
 ## Documentation
 
-La documentation de l'API est accesible directement dans la collection Postman fournie.
+The API documentation is directly accessible in the provided Postman collection.
 
 ![image](resources/postman_documentation.png)
